@@ -1,5 +1,9 @@
 sceneSetups:
-- path: Assets/DogMafia_Overworld.unity
+- path: Assets/DogMafia_Overworld_2.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Main Menu.unity
+  isLoaded: 1
+  isActive: 0
   isSubScene: 0
