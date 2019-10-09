@@ -10,22 +10,6 @@ public class IsometricPlayerMovementController : MonoBehaviour
 
     Rigidbody2D rbody;
 
-    //freeze movement of player in case if receiving instructions or talking to others
-    public bool stopMovement()
-    {
-        bool inAction;
-        if (DialogueManager.instance.inDialogue)
-        {
-            inAction = true;
-        }
-        else
-        {
-            inAction = false;
-        }
-
-        return inAction;
-    }
-
     private void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
@@ -34,10 +18,8 @@ public class IsometricPlayerMovementController : MonoBehaviour
 
 
     // Update is called once per frame
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        if (stopMovement()) return;
-        
         Vector2 currentPos = rbody.position;
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");

@@ -7,6 +7,9 @@ public class Will_Movement : MonoBehaviour
     public Rigidbody2D rbody;
     public float speed;
     public Animator anim;
+    public float currentHealth;
+    public float maxHealth;
+    public GameObject deathEffect;
     
     public bool stopMovement()
     {
@@ -40,5 +43,26 @@ public class Will_Movement : MonoBehaviour
         }
 
         rbody.MovePosition(rbody.position + movement * Time.deltaTime * speed);
+    }
+
+    public void GetHealth(float health)
+    {
+        if(health > 0)
+        {
+            currentHealth += health;
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+        }
+    }
+
+    private void Die()
+    {
+        if(deathEffect != null)
+        {
+            Instantiate(deathEffect, transform.position, transform.rotation);
+        }
+        Destroy(gameObject);
     }
 }
