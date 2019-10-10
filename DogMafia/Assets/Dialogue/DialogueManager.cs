@@ -163,14 +163,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-//    private void Update()
-//    {
-//        if (Input.GetKeyDown(KeyCode.Z))
-//        {
-//            if (inDialogue)
-//            {
-//                dequeueDialogue();
-//            }
-//        }
-//    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (inDialogue)
+            {
+                dequeueDialogue();
+            }
+        }
+    }
 }

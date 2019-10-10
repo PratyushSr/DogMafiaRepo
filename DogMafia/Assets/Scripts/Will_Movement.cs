@@ -7,6 +7,12 @@ public class Will_Movement : MonoBehaviour
     public Rigidbody2D rbody;
     public float speed;
     public Animator anim;
+    public VectorValue startingPosition;
+
+    void Start()
+    {
+        transform.position = startingPosition.initialValue;
+    }
     
     public bool stopMovement()
     {

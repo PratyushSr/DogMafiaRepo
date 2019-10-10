@@ -111,12 +111,15 @@
           <e p="MainMenu.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="CameraController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="MafiaBaseTrigger.cs" t="Include" />
           <e p="OverworldTrigger.cs" t="Include" />
+          <e p="SceneTransition.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="Interactable.cs" t="Include" />
           </e>
+          <e p="VectorValue.cs" t="Include" />
           <e p="Will_Movement.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

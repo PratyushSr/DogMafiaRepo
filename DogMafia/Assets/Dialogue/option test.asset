@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: option test
   m_EditorClassIdentifier: Assembly-CSharp::DialgoueOption
   dialogueInfo:
-  - characterName: James
-    characterImage: {fileID: 0}
-    characterScript: Hello my name is James
-  - characterName: James
-    characterImage: {fileID: 0}
-    characterScript: I've been looking everywhere for my squeaky toy!
-  questionText: Could you help me?
+  - characterName: Emma
+    characterImage: {fileID: 21300000, guid: cf8733203dcb848d3b2c95619af0161b, type: 3}
+    characterScript: Mister, mister! My favorite red ball has gone missing and I can't
+      find it anywhere.
+  - characterName: Emma
+    characterImage: {fileID: 21300000, guid: cf8733203dcb848d3b2c95619af0161b, type: 3}
+    characterScript: '*sniffle*'
+  questionText: Please help me.
   optionsInfo:
-  - buttonName: Sure, this'll be fun!
+  - buttonName: No need to cry. I'll see if I can find it for ya.
     missionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -36,7 +37,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: Find your own toy...
+  - buttonName: Sorry little one, but maybe another time...
     missionEvent:
       m_PersistentCalls:
         m_Calls:

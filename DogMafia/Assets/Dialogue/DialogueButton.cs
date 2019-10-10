@@ -6,6 +6,7 @@ public class DialogueButton : MonoBehaviour
 {
     public void getNextLine()
     {
+        Debug.Log("Clicked the button");
         DialogueManager.instance.dequeueDialogue();
     }
 }

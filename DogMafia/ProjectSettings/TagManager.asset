@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - From Overworld Mafia Base Door
+  - Overworld Mafia Base Door
   layers:
   - Default
   - TransparentFX

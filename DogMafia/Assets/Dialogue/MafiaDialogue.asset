@@ -14,23 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterName: Tiny
-    characterImage: {fileID: 0}
-    characterScript: Look who it is!
+    characterImage: {fileID: 21300000, guid: e028942cf817a47ce8740f90eed8a71d, type: 3}
+    characterScript: Hey pipsqueak!
+  - characterName: Tiny
+    characterImage: {fileID: 21300000, guid: e028942cf817a47ce8740f90eed8a71d, type: 3}
+    characterScript: I have a task for you from boss.
+  - characterName: Tiny
+    characterImage: {fileID: 21300000, guid: e028942cf817a47ce8740f90eed8a71d, type: 3}
+    characterScript: Here take the note.
   - characterName: Will
-    characterImage: {fileID: 0}
-    characterScript: '...'
+    characterImage: {fileID: 21300000, guid: 6007fc1d69e5f47398470081a4233e77, type: 3}
+    characterScript: Oh? This doesn't look like Boss' handwriting...
   - characterName: Tiny
-    characterImage: {fileID: 0}
-    characterScript: Why the long face?
+    characterImage: {fileID: 21300000, guid: e028942cf817a47ce8740f90eed8a71d, type: 3}
+    characterScript: Don't question it, pipsqueak! It's definetely from da Boss...
   - characterName: Tiny
-    characterImage: {fileID: 0}
-    characterScript: 'Don''t just stand there, go do your job! '
+    characterImage: {fileID: 21300000, guid: e028942cf817a47ce8740f90eed8a71d, type: 3}
+    characterScript: Lookie here, just up and explore the town. We's got a heist preparin'
+      and we need more information about our surroundin's. Capisce?
   - characterName: Will
-    characterImage: {fileID: 0}
-    characterScript: What was...
-  - characterName: Tiny
-    characterImage: {fileID: 0}
-    characterScript: 'No puppy eyes! That won''t save you from Al Corgione. '
-  - characterName: Tiny
-    characterImage: {fileID: 0}
-    characterScript: Why don't you go explore New Bork City.
+    characterImage: {fileID: 21300000, guid: 6007fc1d69e5f47398470081a4233e77, type: 3}
+    characterScript: (It's not like I have a choice anyway...)
