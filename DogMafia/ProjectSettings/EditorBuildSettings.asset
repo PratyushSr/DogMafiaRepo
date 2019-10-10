@@ -8,13 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/DogMafia_Overworld_2.unity
     guid: ae782c78678214344b0795e331c90c50
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Main Menu.unity
     guid: 8d95f0d2dcb444af2847c5aa9ee32f54
   - enabled: 1
     path: Assets/Mafia_Base.unity
     guid: ddfa72f2671c08c4c8e27058231d2e50
+  - enabled: 1
+    path: Assets/Dog_AI.unity
+    guid: 3a310ea3ed7c74d4faed74954ae71681
   m_configObjects: {}
