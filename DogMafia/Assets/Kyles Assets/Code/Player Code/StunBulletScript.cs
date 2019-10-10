@@ -8,6 +8,7 @@ public class StunBulletScript : MonoBehaviour
     public float stunDuration = 3;
     public Rigidbody2D rb;
     public GameObject impactEffect;
+    public MouseLocator ml;
     void Start()
     {
         rb.velocity = transform.right * speed;

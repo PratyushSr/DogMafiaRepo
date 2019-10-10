@@ -16,8 +16,7 @@ public class HealthPickup : MonoBehaviour
         //Will_Movement player = hitInfo.GetComponent<Will_Movement>();
         if (hitInfo.gameObject.CompareTag("Player")) //if (hitInfo != null)
         {
-           // player.GetHealth(health);
-            Debug.Log("Player healed 100 health");
+            hitInfo.GetComponent<PlayerHealth>().Heal(health);
             Die();
         }
     }

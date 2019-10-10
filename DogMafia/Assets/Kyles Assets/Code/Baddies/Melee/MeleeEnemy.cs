@@ -12,7 +12,7 @@ public class MeleeEnemy : MonoBehaviour
     public float range; //range of melee attack
     public float stoppingDistance; //AI will stop this distance away from the player
     public float attackFreq; //how fast the enemy attacks
-    public GameObject attack; //the attack projectile
+    public float attkDmg; //damage of attack
 
 
     private float attackCounter;
@@ -44,7 +44,7 @@ public class MeleeEnemy : MonoBehaviour
             {
                 if (Vector2.Distance(transform.position, player.position) <= range) //is within range to shoot
                 {
-                    Instantiate(attack, transform.position, Quaternion.identity);
+                    Attack();
                     attackCounter = attackFreq;
                 }
             }
@@ -59,6 +59,12 @@ public class MeleeEnemy : MonoBehaviour
         }
     }
 
+    void Attack()
+    {
+        PlayerHealth plr = player.GetComponent<PlayerHealth>();
+        plr.TakeDamage(attkDmg);
+        Debug.DrawRay(transform.position, player.position - transform.position, Color.red, 1f);
+    }
     public void Heal(float health) //heals enemy for set ammount
     {
         if (health > 0) //make sure health is positive float

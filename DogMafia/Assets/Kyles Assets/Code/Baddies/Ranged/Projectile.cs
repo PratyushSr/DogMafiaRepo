@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed;
+    public float bulletSpeed;
+    public float attkDmg;
+    public GameObject impactEffect;
     private Transform player;
     private Vector2 target;
 
@@ -17,23 +19,29 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target, bulletSpeed * Time.deltaTime);
 
         if(transform.position.x == target.x && transform.position.y == target.y)
         {
-            DestroyProjectile();
+            Die();
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") || other.CompareTag("Enviroment"))
+        if(other.CompareTag("Player"))
         {
-            DestroyProjectile();
+            PlayerHealth plr = other.GetComponent<PlayerHealth>();
+            plr.TakeDamage(attkDmg);
+            Die();
         }
     }
-    void DestroyProjectile()
+    void Die()
     {
+        if(impactEffect != null)
+        {
+            Instantiate(impactEffect, transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
     }
 }
