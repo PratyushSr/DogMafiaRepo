@@ -128,7 +128,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            inDialogue = false;
+            inDialogue = false; 
         }
     }
 

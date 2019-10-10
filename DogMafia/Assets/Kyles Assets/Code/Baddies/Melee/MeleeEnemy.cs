@@ -64,6 +64,7 @@ public class MeleeEnemy : MonoBehaviour
         PlayerHealth plr = player.GetComponent<PlayerHealth>();
         plr.TakeDamage(attkDmg);
         Debug.DrawRay(transform.position, player.position - transform.position, Color.red, 1f);
+        
     }
     public void Heal(float health) //heals enemy for set ammount
     {
