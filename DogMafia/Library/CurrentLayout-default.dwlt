@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 122
+  controlID: 119
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 123
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 124
+  controlID: 41
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,23 +385,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 58470000
-      m_LastClickedID: 18264
-      m_ExpandedIDs: 6afbffffb446000058470000
+      m_SelectedIDs: 7e470000
+      m_LastClickedID: 18302
+      m_ExpandedIDs: 6afbffffc244000006460000a046000074470000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: WayPoint (1)
+        m_OriginalName: WayPoint (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 17756
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -447,9 +447,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.0463586, y: -2.8329744, z: -2.7731547}
+    m_Target: {x: 2.0924776, y: -1.8327029, z: -444.82455}
     speed: 2
-    m_Value: {x: 1.0463586, y: -2.8329744, z: -2.7731547}
+    m_Value: {x: 2.0924776, y: -1.8327029, z: -444.82455}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -482,9 +482,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.902877
+    m_Target: 11.868617
     speed: 2
-    m_Value: 15.902877
+    m_Value: 11.868617
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -557,10 +557,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 341
+    x: 266
     y: 72
-    width: 810
-    height: 565
+    width: 961
+    height: 605
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -571,14 +571,14 @@ MonoBehaviour:
     - {fileID: -4778864686869753667, guid: 4388d5fa61294ef47982543de007df5d, type: 2}
     - {fileID: 6430899875653304830, guid: df53b41fd139b764ebe199e3834d3cda, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.5300577
+    - e00: 1.0421472
       e01: 0
       e02: 0
-      e03: -17.267853
+      e03: -228.65814
       e10: 0
-      e11: 0.5300577
+      e11: 1.0421472
       e12: 0
-      e13: 118.407295
+      e13: 22.789398
       e20: 0
       e21: 0
       e22: 1
@@ -724,20 +724,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Kyles Assets/Code/Baddies/Melee
+    - Assets/Kyles Assets/Code/Utility Script
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Kyles Assets/Code/Baddies/Melee
+  - Assets/Kyles Assets/Code/Utility Script
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\kylej\Documents\GitHub\DogMafiaRepo\DogMafia
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 9c310000
-    m_LastClickedID: 12700
-    m_ExpandedIDs: 000000009c2e0000ae2e0000043000003a3300008a330000c03400005e380000443900006a3900004a3f00007e4000001e4200003e48000040480000
+    scrollPos: {x: 0, y: 115}
+    m_SelectedIDs: 2e360000
+    m_LastClickedID: 13870
+    m_ExpandedIDs: 000000009e2e0000b02e0000063000003c3300008c330000c234000060380000463900006c3900004c3f0000204200005a4800005c480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -765,7 +765,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c2e0000ae2e0000043000003a3300008a330000c03400005e380000443900004a3f00007e4000001e4200003e48000040480000
+    m_ExpandedIDs: 000000009e2e0000b02e0000063000003c3300008c330000c234000060380000463900006c3900004c3f000080400000204200005a4800005c480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008c460000d0310000dc4b000014670000386700003c6700007a6a00005e5f000016580000004c0000963c00005e6d000002690000a03e0000c4610000904d0000ac520000a012010000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
