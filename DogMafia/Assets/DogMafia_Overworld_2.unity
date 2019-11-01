@@ -9404,6 +9404,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6398083991828462925, guid: 3671e9e08d75a01499202a3820e4df09,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1220415589}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3671e9e08d75a01499202a3820e4df09, type: 3}
 --- !u!1 &384652240 stripped
@@ -10249,7 +10254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e330d07369c5146bde239608c5d836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 5081166558307784885}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   healthSegments:
   - {fileID: 1566857449}
@@ -120769,7 +120774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e512b9fd2f4b484db3736faef092851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 0}
+  followTarget: {fileID: 1220415589}
   moveSpeed: 5
 --- !u!81 &1500946703
 AudioListener:
@@ -136769,7 +136774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce97769abff54b4b8f060e9bc07ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: {fileID: 0}
+  location: {fileID: 412790525}
   ObjToBeSpawned: {fileID: 924975982}
   button: Interact1
 --- !u!4 &2126757708
@@ -137041,7 +137046,7 @@ PrefabInstance:
         type: 3}
       propertyPath: startingPosition
       value: 
-      objectReference: {fileID: 11400000, guid: a436d9abbe30e42bea4bbb1b5d251478,
+      objectReference: {fileID: 11400000, guid: 30184d09b1e5b4111ae994bd27ef6889,
         type: 2}
     - target: {fileID: 5507960899274155570, guid: 1170dd81bc7bb4db5beefd79a48fc482,
         type: 3}
@@ -137117,7 +137122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   maxHealth: 100
-  respawnPoint: {fileID: 0}
+  respawnPoint: {fileID: 988307643}
   deathEffect: {fileID: 0}
   healthBar: {fileID: 612522611}
 --- !u!1001 &8233628727676571672

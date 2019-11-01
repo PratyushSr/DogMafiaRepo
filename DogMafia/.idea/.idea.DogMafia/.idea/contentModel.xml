@@ -92,9 +92,44 @@
             <e p="ProjectVersion.txt" t="Include" />
           </e>
         </e>
-        <e p="Code" t="Include">
-          <e p="Player Code" t="Include">
-            <e p="PlayerMovement.cs" t="Include" />
+        <e p="CodeMonkey" t="Include">
+          <e p="Assets.cs" t="Include" />
+          <e p="CMDebug.cs" t="Include" />
+          <e p="MonoBehaviours" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="CameraFollowSetup.cs" t="Include" />
+            <e p="ComponentActions.cs" t="Include" />
+            <e p="PositionRendererSorter.cs" t="Include" />
+          </e>
+          <e p="readme.txt" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="Button_Sprite.cs" t="Include" />
+            <e p="Button_UI.cs" t="Include" />
+            <e p="FunctionPeriodic.cs" t="Include" />
+            <e p="FunctionTimer.cs" t="Include" />
+            <e p="FunctionUpdater.cs" t="Include" />
+            <e p="UI_Bar.cs" t="Include" />
+            <e p="UI_BarMultiple.cs" t="Include" />
+            <e p="UI_Sprite.cs" t="Include" />
+            <e p="UI_TextComplex.cs" t="Include" />
+            <e p="UtilsClass.cs" t="Include" />
+            <e p="World_Bar.cs" t="Include" />
+            <e p="World_Mesh.cs" t="Include" />
+            <e p="World_Sprite.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
           </e>
         </e>
         <e p="Dialogue" t="Include">
@@ -107,14 +142,79 @@
           <e p="MissionHandler.cs" t="Include" />
           <e p="TestDialogue.cs" t="Include" />
         </e>
+        <e p="Inventory" t="Include">
+          <e p="BagScript.cs" t="Include" />
+          <e p="Buttons" t="Include">
+            <e p="BagButton.cs" t="Include" />
+            <e p="IUseable.cs" t="Include" />
+          </e>
+          <e p="IClickable.cs" t="Include" />
+          <e p="InventoryScript.cs" t="Include" />
+          <e p="Item" t="Include">
+            <e p="Bag.cs" t="Include" />
+            <e p="HealthConsumable.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+          </e>
+          <e p="SlotScript.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
+        </e>
+        <e p="Kyles Assets" t="Include">
+          <e p="Code" t="Include">
+            <e p="Baddies" t="Include">
+              <e p="EnemyHealth.cs" t="Include" />
+              <e p="Melee" t="Include">
+                <e p="EnemyFollow.cs" t="Include" />
+                <e p="MeleeEnemy.cs" t="Include" />
+              </e>
+              <e p="Patrol" t="Include">
+                <e p="PatrolRandom.cs" t="Include" />
+                <e p="PatrolWayPoints.cs" t="Include" />
+              </e>
+              <e p="Ranged" t="Include">
+                <e p="Projectile.cs" t="Include" />
+                <e p="RangedEnemy.cs" t="Include" />
+              </e>
+            </e>
+            <e p="FriendlyAI" t="Include">
+              <e p="CitizenAI.cs" t="Include" />
+              <e p="FriendlyInteractableAI.cs" t="Include" />
+            </e>
+            <e p="Interactible Objects" t="Include">
+              <e p="DestructableObject.cs" t="Include" />
+              <e p="HealthPickup.cs" t="Include" />
+            </e>
+            <e p="Player Code" t="Include">
+              <e p="HealthBar.cs" t="Include" />
+              <e p="PlayerHealth.cs" t="Include" />
+              <e p="PlayerMeleeAttack.cs" t="Include" />
+              <e p="PlayerMovement.cs" t="Include" />
+              <e p="StunBulletScript.cs" t="Include" />
+              <e p="Weapon.cs" t="Include" />
+            </e>
+            <e p="Utility Script" t="Include">
+              <e p="MouseLocator.cs" t="Include" />
+              <e p="Spawn.cs" t="Include" />
+              <e p="Spawn1.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Menu" t="Include">
           <e p="MainMenu.cs" t="Include" />
+        </e>
+        <e p="Quests" t="Include">
+          <e p="CompassController.cs" t="Include" />
+          <e p="Quest.cs" t="Include" />
+          <e p="QuestBase.cs" t="Include" />
+          <e p="QuestButton.cs" t="Include" />
+          <e p="QuestEvent.cs" t="Include" />
+          <e p="QuestLocation.cs" t="Include" />
+          <e p="QuestManager.cs" t="Include" />
+          <e p="QuestPath.cs" t="Include" />
+          <e p="QuestPointerScreen.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
-          <e p="MafiaBaseTrigger.cs" t="Include" />
-          <e p="OverworldTrigger.cs" t="Include" />
           <e p="SceneTransition.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="Interactable.cs" t="Include" />
