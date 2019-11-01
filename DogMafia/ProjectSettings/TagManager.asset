@@ -6,6 +6,7 @@ TagManager:
   tags:
   - From Overworld Mafia Base Door
   - Overworld Mafia Base Door
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - player
   - 
   - 
   - 
