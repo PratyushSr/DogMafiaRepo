@@ -92,6 +92,9 @@
             <e p="ProjectVersion.txt" t="Include" />
           </e>
         </e>
+        <e p="Behaviors" t="Include">
+          <e p="DeathBehavior.cs" t="Include" />
+        </e>
         <e p="CodeMonkey" t="Include">
           <e p="Assets.cs" t="Include" />
           <e p="CMDebug.cs" t="Include" />
@@ -117,6 +120,9 @@
             <e p="World_Mesh.cs" t="Include" />
             <e p="World_Sprite.cs" t="Include" />
           </e>
+        </e>
+        <e p="Combat" t="Include">
+          <e p="Range.cs" t="Include" />
         </e>
         <e p="Demigiant" t="Include">
           <e p="DOTween" t="Include">
@@ -201,9 +207,16 @@
         <e p="Menu" t="Include">
           <e p="MainMenu.cs" t="Include" />
         </e>
+        <e p="Quest" t="Include">
+          <e p="BallQuest.cs" t="Include" />
+          <e p="Quest.cs" t="Include" />
+          <e p="QuestGiver.cs" t="Include" />
+          <e p="QuestLog.cs" t="Include" />
+          <e p="QuestLogButton.cs" t="Include" />
+          <e p="QuestScript.cs" t="Include" />
+        </e>
         <e p="Quests" t="Include">
           <e p="CompassController.cs" t="Include" />
-          <e p="Quest.cs" t="Include" />
           <e p="QuestBase.cs" t="Include" />
           <e p="QuestButton.cs" t="Include" />
           <e p="QuestEvent.cs" t="Include" />
@@ -211,11 +224,17 @@
           <e p="QuestManager.cs" t="Include" />
           <e p="QuestPath.cs" t="Include" />
           <e p="QuestPointerScreen.cs" t="Include" />
+          <e p="Quests.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="Character.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="NPC.cs" t="Include" />
           <e p="SceneTransition.cs" t="Include" />
+          <e p="Shoot.cs" t="Include" />
+          <e p="Stat.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="Interactable.cs" t="Include" />
           </e>

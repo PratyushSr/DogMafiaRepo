@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
-    public Quest quest = new Quest();
+    public Quests quest = new Quests();
     public GameObject questPrintBox;
     public GameObject buttonPrefab;
     public GameObject A, B, C, D, E;

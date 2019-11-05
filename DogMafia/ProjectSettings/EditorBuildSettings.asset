@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Dog_AI.unity
     guid: 3a310ea3ed7c74d4faed74954ae71681
+  - enabled: 1
+    path: Assets/Mafia_Base2.unity
+    guid: e51ce000501004208b98ced06af0f77f
   m_configObjects: {}

@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
             return instance;
         }
     }
+    
     [SerializeField]
     private Button[] actionButtons;
 

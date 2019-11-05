@@ -7,7 +7,7 @@ public class HealthConsumable : Item, IUseable
 {
     public Sprite myIcon { get; }
     [SerializeField]
-    public int healthValue;
+    private int healthValue;
 
     private PlayerHealth health;
     private GameObject player;
@@ -15,6 +15,7 @@ public class HealthConsumable : Item, IUseable
     public void Use()
     {
         Remove();
+        //Will_Movement.health.MyCurrentValue += healthValue;
         //must integrate playerhealth and health bar
 //        player = GameObject.Find("Player");
 //        player.GetComponent<PlayerHealth>().Heal(healthValue);

@@ -22,7 +22,7 @@ public class Bag : Item, IUseable
     }
 
 
-    public Sprite myIcon { get; } //remove this?
+    public Sprite myIcon { get; } 
 
     public void Use()
     {
