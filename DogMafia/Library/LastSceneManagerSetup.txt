@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/WalBark.unity
+- path: Assets/DM_Overworld_RankC.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
