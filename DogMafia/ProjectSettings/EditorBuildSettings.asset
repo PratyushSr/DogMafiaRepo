@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/old/DogMafia_Overworld_2.unity
     guid: ae782c78678214344b0795e331c90c50
   - enabled: 1
@@ -17,9 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mafia_Base.unity
     guid: ddfa72f2671c08c4c8e27058231d2e50
-  - enabled: 1
-    path: Assets/Dog_AI.unity
-    guid: 3a310ea3ed7c74d4faed74954ae71681
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Mafia_Base2.unity
     guid: e51ce000501004208b98ced06af0f77f
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Walbarkinside.unity
     guid: e44cd24dd513a2348a017707c54fada2
+  - enabled: 1
+    path: Assets/code/CombatScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

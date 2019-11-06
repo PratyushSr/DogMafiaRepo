@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
     public static bool _GamePaused = false;
     public GameObject _PauseMenuUI;
 
-    void Update()
+    private void Update()
     {
         if(Input.GetButtonDown("Cancel"))
         {
@@ -21,7 +21,6 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
-
     void Resume()
     {
         _PauseMenuUI.SetActive(false);

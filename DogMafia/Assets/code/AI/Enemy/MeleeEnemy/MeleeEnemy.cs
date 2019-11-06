@@ -66,8 +66,11 @@ public class MeleeEnemy : MonoBehaviour
         ComponentDoubleCheck();
         _InitalLocation = transform.position;
         _RandomWanderSpot = new Vector2(Random.Range(-_WanderRange.x, _WanderRange.x) + _InitalLocation.x, Random.Range(-_WanderRange.y, _InitalLocation.y) + _InitalLocation.y);
-        if (_MoveSpots != null) { _NumOfSpots = _MoveSpots.Length; }
-        if(_NumOfSpots <= 0) { _PatrolType = PatrolType.Idle; }
+        if(_State == AiState.Patroling)
+        {
+            if (_MoveSpots != null) { _NumOfSpots = _MoveSpots.Length; }
+            if (_NumOfSpots <= 0) { _PatrolType = PatrolType.Idle; }
+        }
     }
 
     // Update is called once per frame
@@ -129,9 +132,9 @@ public class MeleeEnemy : MonoBehaviour
                     {
                         if (CheckIfTargetLost()) { break; }
                         transform.position = Vector2.MoveTowards(transform.position, _Target.transform.position, _MoveSpeed * Time.deltaTime);
-                        if (_AttackCounter <= 0)
+                        if (Vector2.Distance(transform.position, _Target.transform.position) < _AttackRange)
                         {
-                            if (Vector2.Distance(transform.position, _Target.transform.position) < _AttackRange)
+                            if(_AttackCounter <= 0)
                             {
                                 if (Attack())
                                 {
@@ -142,6 +145,7 @@ public class MeleeEnemy : MonoBehaviour
                             {
                                 _AttackCounter -= Time.deltaTime;
                             }
+
                         }
                         break;
                     }
