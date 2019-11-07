@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
-    private float _MoveSpeed = 5f;
+    private float _MoveSpeed = 3f;
     private Vector2 _Movement;
 
     public float _CurrentHealth = 100f;

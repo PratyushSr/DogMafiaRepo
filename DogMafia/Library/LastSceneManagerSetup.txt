@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/DM_Overworld_RankC.unity
+- path: Assets/code/CombatScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

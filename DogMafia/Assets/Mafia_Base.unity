@@ -313,9 +313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &56495941
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,9 +475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &144734904
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,9 +595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &152468640
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,9 +907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &168534368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,9 +1205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &231795181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,9 +1398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &236852587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,9 +2433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &377914504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,9 +3138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &688085441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3282,9 +3258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!114 &704519330 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8233628726549650132, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
@@ -5473,7 +5446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &795884662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5860,7 +5833,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.75
+  orthographic size: 1.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5957,7 +5930,7 @@ PrefabInstance:
     - target: {fileID: 3745069007010207195, guid: 1170dd81bc7bb4db5beefd79a48fc482,
         type: 3}
       propertyPath: speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7984244621917475519, guid: 1170dd81bc7bb4db5beefd79a48fc482,
         type: 3}
@@ -6023,6 +5996,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081166557094709457, guid: 1170dd81bc7bb4db5beefd79a48fc482,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081166557094709457, guid: 1170dd81bc7bb4db5beefd79a48fc482,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5507960899274155570, guid: 1170dd81bc7bb4db5beefd79a48fc482,
         type: 3}
@@ -6815,9 +6798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &1121903789
 GameObject:
   m_ObjectHideFlags: 0
@@ -7533,14 +7513,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1327231359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a01048faebadd44ac61a6a33eeb04c, type: 3}
+  m_Script: {fileID: 11500000, guid: f89c261d46029d64ebdf15b1adb6da44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
-  primaryAttack: {fileID: 0}
-  secondaryAttack: {fileID: 0}
-  wm: {fileID: 0}
-  animator: {fileID: 0}
+  _CurrentHealth: 100
+  _MaxHealth: 100
+  _Animator: {fileID: 0}
+  _RigidBody: {fileID: 0}
+  _Weapon: {fileID: 0}
 --- !u!1 &1412797458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8233628727276226959, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
@@ -8055,9 +8035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &1663421865
 GameObject:
   m_ObjectHideFlags: 0
@@ -8394,9 +8371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &1779643766
 GameObject:
   m_ObjectHideFlags: 0
@@ -8554,10 +8528,10 @@ RectTransform:
   m_Father: {fileID: 795884662}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 81.100006, y: -28.939}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779882563
 MonoBehaviour:
@@ -8942,9 +8916,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &1840968675
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,9 +9154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &1954696789
 GameObject:
   m_ObjectHideFlags: 0
@@ -9650,9 +9618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &2022335108
 GameObject:
   m_ObjectHideFlags: 0
@@ -9773,9 +9738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &2037786065
 GameObject:
   m_ObjectHideFlags: 0
@@ -9896,9 +9858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!114 &2039826813 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
@@ -9960,7 +9919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29080a0a586e94fd4b8216483b42ee02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1989244111}
 --- !u!1 &2103139002
 GameObject:
   m_ObjectHideFlags: 0
@@ -10081,9 +10039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc598525839e504bb909af0274308f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
-  deathEffect: {fileID: 0}
 --- !u!1 &2125405695
 GameObject:
   m_ObjectHideFlags: 0
@@ -10262,6 +10217,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212105080637535009, guid: 58441bcae241446838499947799bd644,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3778710228372963381, guid: 58441bcae241446838499947799bd644,
         type: 3}

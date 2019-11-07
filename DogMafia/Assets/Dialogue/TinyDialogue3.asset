@@ -38,3 +38,6 @@ MonoBehaviour:
   - characterName: Will
     characterImage: {fileID: 21300000, guid: 30d9704a7d6171044bdcec656528924f, type: 3}
     characterScript: (What a bother...but looks like I have no choice)
+  - characterName: Tiny
+    characterImage: {fileID: 21300000, guid: 0bf6993060865d9408127c1243ec643f, type: 3}
+    characterScript: Go to da boss. He'll tell ya about it.
