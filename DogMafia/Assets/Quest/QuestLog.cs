@@ -61,7 +61,7 @@ public class QuestLog : MonoBehaviour
             }
 
             string title = quest.MyTitle;
-            questDescription.text = string.Format("{0}\n<size=25>{1}</size>\n\nObjectives\n<size=25>{2}</size>", title, quest.MyDescription, objectives); //can add html format between ""
+            questDescription.text = string.Format("{0}\n<size=25>{1}</size>\n", title, quest.MyDescription); //can add html format between ""
         }
     }
 }

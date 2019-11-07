@@ -8,12 +8,12 @@ public class Will_Movement : MonoBehaviour
     public float speed;
     public Animator anim;
     public VectorValue startingPosition;
-    [SerializeField]
+//    [SerializeField]
 //    private Stat health; //originally private but made public static to access it in health consumable.cs
 //    private float initialHealth = 100;
-    protected bool isAttacking = false;
-    protected Coroutine attackRoutine;
-    [SerializeField] private GameObject[] attackPrefab;
+//    protected bool isAttacking = false;
+//    protected Coroutine attackRoutine;
+//    [SerializeField] private GameObject[] attackPrefab;
     
     public Transform MyTarget{ get; set; }
     
@@ -50,10 +50,10 @@ public class Will_Movement : MonoBehaviour
 //            health.MyCurrentValue -= 10;
 //        }
 
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            shootWeapon();
-        }
+//        if (Input.GetKeyDown(KeyCode.Tab))
+//        {
+//            shootWeapon();
+//        }
 
         if (stopMovement()) return;
         Vector2 movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -64,7 +64,7 @@ public class Will_Movement : MonoBehaviour
             anim.SetFloat("input_x", movement.x);
             anim.SetFloat("input_y", movement.y);
             
-            StopAttack();
+//            StopAttack();
         }
 
         else
@@ -75,59 +75,59 @@ public class Will_Movement : MonoBehaviour
         rbody.MovePosition(rbody.position + movement * Time.deltaTime * speed);
     }
 
-    public IEnumerator Attack()
-    {
-        isAttacking = true;
-        anim.SetBool("attack", isAttacking);
-        yield return new WaitForSeconds(1); //hardcoded
+//    public IEnumerator Attack()
+//    {
+//        isAttacking = true;
+//        anim.SetBool("attack", isAttacking);
+//        yield return new WaitForSeconds(1); //hardcoded
+//
+//        if (MyTarget != null)
+//        {
+//            Shoot s = Instantiate(attackPrefab[0], transform.position, Quaternion.identity).GetComponent<Shoot>();
+//            //s.MyTarget = MyTarget;
+//            s.Initialize(MyTarget, 20);
+//        }
+//
+//        StopAttack();
+//        
+//    }
 
-        if (MyTarget != null)
-        {
-            Shoot s = Instantiate(attackPrefab[0], transform.position, Quaternion.identity).GetComponent<Shoot>();
-            //s.MyTarget = MyTarget;
-            s.Initialize(MyTarget, 20);
-        }
-
-        StopAttack();
-        
-    }
-
-    public void StopAttack()
-    {
-        if (attackRoutine != null)
-        {
-            StopCoroutine(attackRoutine);
-            isAttacking = false;
-            anim.SetBool("attack", isAttacking);
-        }
-    }
+//    public void StopAttack()
+//    {
+//        if (attackRoutine != null)
+//        {
+//            StopCoroutine(attackRoutine);
+//            isAttacking = false;
+//            anim.SetBool("attack", isAttacking);
+//        }
+//    }
 
     //if you change the weight to 1 the attack will work but otherwise won't work,
     //so haven't actually called the following function
-    public void HandleLayers()
-    {
-        if (isAttacking)
-        {
-            ActivateLayer("AttackLayer");
-        }
-    }
-
-    public void ActivateLayer(string layerName)
-    {
-        for (int i = 0; i < anim.layerCount; i++)
-        {
-            anim.SetLayerWeight(i, 0);
-        }
-        anim.SetLayerWeight(anim.GetLayerIndex(layerName), 1);
-    }
-    
-    void shootWeapon()
-    {
-        if (MyTarget != null && !isAttacking)
-        {
-            attackRoutine = StartCoroutine(Attack());
-        }
-    }
+//    public void HandleLayers()
+//    {
+//        if (isAttacking)
+//        {
+//            ActivateLayer("AttackLayer");
+//        }
+//    }
+//
+//    public void ActivateLayer(string layerName)
+//    {
+//        for (int i = 0; i < anim.layerCount; i++)
+//        {
+//            anim.SetLayerWeight(i, 0);
+//        }
+//        anim.SetLayerWeight(anim.GetLayerIndex(layerName), 1);
+//    }
+//    
+//    void shootWeapon()
+//    {
+//        if (MyTarget != null && !isAttacking)
+//        {
+//            attackRoutine = StartCoroutine(Attack());
+//        }
+//    }
 
 //    private bool InLineofSight()
 //    {
