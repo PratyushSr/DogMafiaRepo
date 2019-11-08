@@ -90,7 +90,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void ApplyDamage(float _Damage) //Applies damage to character
+    public void ApplyDamage1(float _Damage) //Applies damage to character
     {
         if(_Damage > 0 && !_IsImmune) 
         {
@@ -104,7 +104,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void ApplyDamage(float _Damage, bool _BypassImmune) //if _BypassImmune is true, will apply damage to character even if they are immune
+    public void ApplyDamage1(float _Damage, bool _BypassImmune) //if _BypassImmune is true, will apply damage to character even if they are immune
     {
         if(_BypassImmune)
         {
@@ -120,7 +120,7 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            ApplyDamage(_Damage);
+            ApplyDamage1(_Damage);
         }
     }
 

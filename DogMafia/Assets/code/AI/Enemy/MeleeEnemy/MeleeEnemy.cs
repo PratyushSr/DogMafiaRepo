@@ -165,7 +165,7 @@ public class MeleeEnemy : MonoBehaviour
     private bool Attack()
     {
         if(_Target == null) { return false; }
-        _Target.BroadcastMessage("ApplyDamage", _AttackDamage);
+        _Target.BroadcastMessage("ApplyDamage1", _AttackDamage);
         _Animator.SetTrigger("Attacked");
         return true;
     }

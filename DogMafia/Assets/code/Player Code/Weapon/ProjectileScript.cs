@@ -16,14 +16,20 @@ public class ProjectileScript : MonoBehaviour
         {
             case Type.Damage:
             {
-                _Collision.transform.BroadcastMessage("ApplyDamage", _Damage);
-                Die();
+                if(!_Collision.gameObject.CompareTag("Player"))
+                    {
+                        _Collision.transform.BroadcastMessage("ApplyDamage", _Damage);
+                        Die();
+                    }
                 break;
             }
             case Type.Stun:
             {
-                _Collision.transform.BroadcastMessage("ApplyStun", _StunDuration);
-                Die();
+                if (!_Collision.gameObject.CompareTag("Player"))
+                {
+                    _Collision.transform.BroadcastMessage("ApplyStun", _StunDuration);
+                    Die();
+                }
                 break;
             }
         }

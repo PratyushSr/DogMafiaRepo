@@ -2999,7 +2999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Player: {fileID: 1327231359}
-  _DefaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _DefaultColor: {r: 1, g: 1, b: 1, a: 0}
   _HealthSegments:
   - {fileID: 923472358}
   - {fileID: 1370919537}
@@ -8695,6 +8695,71 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8233628728368864011, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.07843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.90623486
+      objectReference: {fileID: 0}
     - target: {fileID: 8233628727477843234, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8845,55 +8910,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+    - target: {fileID: 8233628727477843233, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
         type: 3}
-      propertyPath: m_textInfo.characterCount
+      propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
+    - target: {fileID: 8233628727477843233, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
         type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728186587389, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728276455440, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628728368864011, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8233628727477843232, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
         type: 3}
@@ -8904,16 +8929,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 78.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628727477843233, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8233628727477843233, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8233628728032455696, guid: bbf297b2d6c9d468c9c1cfd52faea2ed,
         type: 3}

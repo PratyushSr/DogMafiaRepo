@@ -18,9 +18,9 @@ TagManager:
   - 
   - Clickable
   - player
-  - 
-  - 
-  - 
+  - Player
+  - Enemies
+  - Environment
   - 
   - 
   - 
@@ -49,4 +49,13 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1178219693
+    locked: 0
+  - name: Player
+    uniqueID: 921635393
+    locked: 0
+  - name: Enemies
+    uniqueID: 4183839453
+    locked: 0
+  - name: Environment
+    uniqueID: 4177352945
     locked: 0

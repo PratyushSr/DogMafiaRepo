@@ -181,7 +181,7 @@ public class Weapon : MonoBehaviour
     {
         if (_StunProjectile != null)
         {
-            Instantiate(_StunProjectile, transform.position, Quaternion.identity);
+            Instantiate(_StunProjectile, _CenterPointOfPlayer.transform.position, Quaternion.identity);
         }
     }
 
@@ -189,7 +189,7 @@ public class Weapon : MonoBehaviour
     {
         if(_DamageProjectile != null)
         {
-            Instantiate(_DamageProjectile, transform.position, Quaternion.identity);
+            Instantiate(_DamageProjectile, _CenterPointOfPlayer.transform.position, Quaternion.identity);
         }
     }
 

@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - UnityEditor.GroupBrush
     - UnityEditor.LineBrush
     Assembly-CSharp.dll:
+    - AudioManager
     - Bag
     - BagButton
     - BagScript
@@ -16,7 +17,6 @@ ScriptsOnlyBuild:
     - DialogueButton
     - DialogueManager
     - DialogueTrigger
-    - Enemy
     - GameManager
     - HealthBar
     - InventoryScript
@@ -58,10 +58,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -103,6 +101,8 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -157,29 +157,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11266}
     - Class: 114
+      Script: {instanceID: 11306}
+    - Class: 114
       Script: {instanceID: 11350}
     - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11894}
+      Script: {instanceID: 11728}
     - Class: 114
-      Script: {instanceID: 20644}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 20646}
+      Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 21108}
+      Script: {instanceID: 21180}
     - Class: 114
-      Script: {instanceID: 25536}
+      Script: {instanceID: 21648}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -296,21 +298,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 11728}
     - Class: 114
-      Script: {instanceID: 11894}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 20644}
+      Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 20646}
+      Script: {instanceID: 21180}
     - Class: 114
-      Script: {instanceID: 143444}
+      Script: {instanceID: 22330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -419,21 +421,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 11728}
     - Class: 114
-      Script: {instanceID: 11894}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 20644}
+      Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 20646}
+      Script: {instanceID: 21180}
     - Class: 114
-      Script: {instanceID: 143444}
+      Script: {instanceID: 22330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -500,15 +502,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11620}
+      Script: {instanceID: 11622}
     - Class: 114
-      Script: {instanceID: 11738}
+      Script: {instanceID: 11740}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 11894}
+      Script: {instanceID: 11896}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -522,81 +524,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    Assets/Walbarkinside.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 732}
-    - Class: 114
-      Script: {instanceID: 9826}
-    - Class: 114
-      Script: {instanceID: 10058}
-    - Class: 114
-      Script: {instanceID: 10608}
-    - Class: 114
-      Script: {instanceID: 10694}
-    - Class: 114
-      Script: {instanceID: 11416}
-    - Class: 114
-      Script: {instanceID: 11488}
-    - Class: 114
-      Script: {instanceID: 11894}
-    - Class: 114
-      Script: {instanceID: 21384}
-    - Class: 114
-      Script: {instanceID: 21386}
-    - Class: 114
-      Script: {instanceID: 21388}
-    - Class: 114
-      Script: {instanceID: 21390}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 19719996
-      Script: {instanceID: 0}
-    - Class: 156049354
-      Script: {instanceID: 0}
-    - Class: 483693784
-      Script: {instanceID: 0}
-    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/code/CombatScene.unity:
     - Class: 1
@@ -662,19 +589,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11488}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 11594}
     - Class: 114
-      Script: {instanceID: 11654}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11728}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 11850}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1362,6 +1289,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 8365ba1d71224db447d06a1511b4a061
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CitizenAI
+  - hash:
+      serializedVersion: 2
       Hash: 4d16cfbaa8e821a2b370e80844a0e9bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1624,18 +1557,11 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 8365ba1d71224db447d06a1511b4a061
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CitizenAI
   platform: 5
   scenePathNames:
   - Assets/Main Menu.unity
   - Assets/Mafia_Base.unity
   - Assets/Mafia_Base2.unity
   - Assets/DM_Overworld_RankC.unity
-  - Assets/Walbarkinside.unity
   - Assets/code/CombatScene.unity
-  playerPath: C:/Users/22iro/Desktop/Square.exe
+  playerPath: C:/Users/22iro/Desktop/Dog_Mafia_Final/Square.exe

@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DM_Overworld_RankC.unity
     guid: 176ecb33d2a886e4c8c39e2151ecd4f7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Walbarkinside.unity
     guid: e44cd24dd513a2348a017707c54fada2
   - enabled: 1
