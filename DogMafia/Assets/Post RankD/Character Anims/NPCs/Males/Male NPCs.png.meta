@@ -59,6 +59,24 @@ TextureImporter:
   - first:
       213: 2780093506501106061
     second: Male NPCs_18
+  - first:
+      213: -1082980299036091838
+    second: Male NPCs_19
+  - first:
+      213: 4416854738455140354
+    second: Male NPCs_20
+  - first:
+      213: -8089041945858750294
+    second: Male NPCs_21
+  - first:
+      213: 8424762978959292895
+    second: Male NPCs_22
+  - first:
+      213: -8750506594210041663
+    second: Male NPCs_23
+  - first:
+      213: 2602131097379609463
+    second: Male NPCs_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -120,7 +138,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,7 +150,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c913b2c983053e9418ccd733dbd374f6
+      spriteID: b52c46a34538e9c4286182f2c1c8bc65
       internalID: -7058510100850572986
       vertices: []
       indices: 
@@ -165,6 +183,48 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: Male NPCs_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 537
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb30d0dbfd6f52746a058f864a8b3f43
+      internalID: 2607370072225000378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male NPCs_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 537
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fa698530023bb4283ab7473bb9a1be
+      internalID: 4201931886154662157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male NPCs_5
       rect:
         serializedVersion: 2
         x: 339
@@ -178,17 +238,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b0331b4e9998748a3781437a2d56ae
-      internalID: 2607370072225000378
+      spriteID: f885724b5fe1058439cc451878090999
+      internalID: -7347946943592894283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_4
+      name: Male NPCs_6
       rect:
         serializedVersion: 2
-        x: 595
+        x: 403
+        y: 537
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a9c7edfc460b548b71cabdc55e6258
+      internalID: 1252163322412446407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male NPCs_7
+      rect:
+        serializedVersion: 2
+        x: 467
         y: 537
         width: 22
         height: 54
@@ -199,14 +280,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 557f891fe340d314ba5fedc35d2952f2
-      internalID: 4201931886154662157
+      spriteID: 63f28c6eadf025e43bbcde8c5639637e
+      internalID: 6904778227796217102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male NPCs_8
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 537
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d7ef25fada8c445b8ea6973bb90684
+      internalID: -5396854581604613319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male NPCs_9
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 537
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7445523b32bebd4e855f8d968475afe
+      internalID: 151736898471054847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Male NPCs_10
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 537
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccfe2b016017df42a87432acc6bc70d
+      internalID: 656573640304677244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male NPCs_16
       rect:
         serializedVersion: 2
         x: 82
@@ -220,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d87609c93e61304d8c82503e35660e3
-      internalID: 656573640304677244
+      spriteID: 0f7f5f050ba3f4e40b19de06c5365799
+      internalID: -4364178920598107087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_11
+      name: Male NPCs_17
       rect:
         serializedVersion: 2
         x: 146
@@ -241,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1af6df0c44c55684ead6a35092f430cb
-      internalID: 2630373562835144309
+      spriteID: 2014fd8a603499d4f9a35cfe04bbcb34
+      internalID: -4465173310595674767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_12
+      name: Male NPCs_18
       rect:
         serializedVersion: 2
         x: 206
@@ -262,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28f82bfef2c3e0049bf04bcbc05d06d0
-      internalID: 7176151560146150324
+      spriteID: f397b23bd4535fb4c996e2f09c35a4b1
+      internalID: 2780093506501106061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_13
+      name: Male NPCs_19
       rect:
         serializedVersion: 2
         x: 339
@@ -283,14 +427,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe78a1c4a25f70c4f8987c1340af773a
-      internalID: 5192057856576333399
+      spriteID: 8ebda2cce7ff8c34fa47aad4f3e2be3d
+      internalID: -1082980299036091838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_14
+      name: Male NPCs_20
       rect:
         serializedVersion: 2
         x: 403
@@ -304,14 +448,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e54699985586343b1f6606ad0dae11
-      internalID: 8570019047950684988
+      spriteID: 70f09e98187888f4db7fdad5947f2103
+      internalID: 4416854738455140354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_15
+      name: Male NPCs_21
       rect:
         serializedVersion: 2
         x: 462
@@ -325,19 +469,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6946ecf48816334d9d3a81b2a2f1ad2
-      internalID: -1394524378955443205
+      spriteID: b4f09d39a2d8c05479a28e269b618629
+      internalID: -8089041945858750294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_16
+      name: Male NPCs_22
       rect:
         serializedVersion: 2
-        x: 595
+        x: 594
         y: 473
-        width: 22
+        width: 24
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -346,19 +490,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d585da2e8a87087449c896a66f9c27e3
-      internalID: -4364178920598107087
+      spriteID: 60e4006bf822bdd45a81403d379eff4f
+      internalID: 8424762978959292895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_17
+      name: Male NPCs_23
       rect:
         serializedVersion: 2
-        x: 659
+        x: 658
         y: 473
-        width: 22
+        width: 23
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -367,14 +511,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 826ab0f27b1fcae4da79880bbf6bfe8b
-      internalID: -4465173310595674767
+      spriteID: 3fc6330748066d540a888b5aab71dbcd
+      internalID: -8750506594210041663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Male NPCs_18
+      name: Male NPCs_24
       rect:
         serializedVersion: 2
         x: 718
@@ -388,8 +532,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a896acd5e0f03342a4bea3baa9ac7ac
-      internalID: 2780093506501106061
+      spriteID: d1de188c962bdd343b5569c8e5ef8666
+      internalID: 2602131097379609463
       vertices: []
       indices: 
       edges: []
