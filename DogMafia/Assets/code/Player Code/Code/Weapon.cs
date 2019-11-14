@@ -34,7 +34,7 @@ public class Weapon : MonoBehaviour
         _MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _MousePos.x -= _CenterPointOfPlayer.transform.position.x;
         _MousePos.y -= _CenterPointOfPlayer.transform.position.y;
-        _Animator.SetFloat("AimingAngle", GetAngle()); 
+        _Animator.SetFloat("AimingAngle", GetAngle());
 
         switch (_DebugMode)
         {
@@ -72,7 +72,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private float GetAngle() //gets the angle that the character is aiming
+    private float GetAngle2() //gets the angle that the character is aiming
     {
         if (_MousePos.y > _CenterPointOfPlayer.transform.position.y)
         {
@@ -100,6 +100,11 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    private float GetAngle()
+    {
+        return Vector2.SignedAngle(Vector2.right, Camera.main.ScreenToWorldPoint(Input.mousePosition) - _CenterPointOfPlayer.transform.position);
+    }
+
     public void PrimaryFire() //Primary weapon slot
     {
         _Animator.SetTrigger("FiredPrimary");
@@ -116,7 +121,6 @@ public class Weapon : MonoBehaviour
                 }
             case CurrentPrimary.StunGunProjectile: //shots a stun projectile
                 {
-                    Debug.Log(GetAngle());
                     ShootStunProjectile();
                     break;
                 }
@@ -146,7 +150,7 @@ public class Weapon : MonoBehaviour
 
     public void MeleeAttack()
     {
-        _Animator.SetTrigger("Attack");
+        _Animator.SetTrigger("MeleeAttack");
         switch (_CurrentMelee)
         {
             case CurrentMelee.Damage:
@@ -160,7 +164,7 @@ public class Weapon : MonoBehaviour
     private void ShootStunGunRay()
     {
         float _StunDuration = 4;
-        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, Mathf.Infinity, ~LayerMask.NameToLayer("Player"));
+        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, Mathf.Infinity, ~gameObject.layer);
         if (_Hit)
         {
             _Hit.transform.BroadcastMessage("ApplyStun", _StunDuration);
@@ -170,7 +174,7 @@ public class Weapon : MonoBehaviour
     private void ShootDamageRay()
     {
         float _Damage = 20;
-        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, Mathf.Infinity, ~LayerMask.NameToLayer("Player"));
+        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, Mathf.Infinity, ~gameObject.layer);
         if (_Hit)
         {
             _Hit.transform.BroadcastMessage("ApplyDamage", _Damage);
@@ -181,7 +185,7 @@ public class Weapon : MonoBehaviour
     {
         if (_StunProjectile != null)
         {
-            Instantiate(_StunProjectile, _CenterPointOfPlayer.transform.position, Quaternion.identity);
+            Instantiate(_StunProjectile, _CenterPointOfPlayer.transform.position, Quaternion.Euler(0, 0, GetAngle()));
         }
     }
 
@@ -189,15 +193,15 @@ public class Weapon : MonoBehaviour
     {
         if(_DamageProjectile != null)
         {
-            Instantiate(_DamageProjectile, _CenterPointOfPlayer.transform.position, Quaternion.identity);
+            Instantiate(_DamageProjectile, _CenterPointOfPlayer.transform.position, Quaternion.Euler(0, 0, GetAngle()));
         }
     }
 
     private void PreformDamageMelee()
     {
         float _Damage = 50;
-        float _MeleeRange = 2.0f;
-        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, _MeleeRange, ~LayerMask.NameToLayer("Player"));
+        float _MeleeRange = 1.0f;
+        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, _MeleeRange, ~gameObject.layer);
         if (_Hit)
         {
             _Hit.transform.BroadcastMessage("ApplyDamage", _Damage);

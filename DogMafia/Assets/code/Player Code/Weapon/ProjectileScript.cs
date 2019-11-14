@@ -30,6 +30,7 @@ public class ProjectileScript : MonoBehaviour
                     _Collision.transform.BroadcastMessage("ApplyStun", _StunDuration);
                     Die();
                 }
+                Die();
                 break;
             }
         }

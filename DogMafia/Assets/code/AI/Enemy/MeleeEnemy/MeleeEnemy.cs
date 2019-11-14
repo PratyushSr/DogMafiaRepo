@@ -10,18 +10,18 @@ public class MeleeEnemy : MonoBehaviour
     public PatrolType _PatrolType;
 
     //Stats
-    public float _MoveSpeed;
-    public float _CurrentHealth;
-    public float _MaxHealth;
-    public float _AggroRange;
-    public float _AttackFrequency;
-    public float _AttackRange;
-    public float _AttackDamage;
+    private float _MoveSpeed = 2f;
+    private float _CurrentHealth = 100f;
+    private float _MaxHealth = 100f;
+    private float _AggroRange = 3f;
+    private float _AttackFrequency = 1f;
+    private float _AttackRange = 1.2f;
+    private float _AttackDamage = 20f;
     private float _AttackCounter = 0; //Counts time between attacks
 
     //Wander & Patrol
     private Vector2 _InitalLocation;
-    private float _WaitTime; //time that the AI waits when reaching a spot
+    private float _WaitTime = 2; //time that the AI waits when reaching a spot
 
     //Wander
     public Vector2 _WanderRange;
@@ -165,7 +165,7 @@ public class MeleeEnemy : MonoBehaviour
     private bool Attack()
     {
         if(_Target == null) { return false; }
-        _Target.BroadcastMessage("ApplyDamage1", _AttackDamage);
+        _Target.BroadcastMessage("ApplyDamage", _AttackDamage);
         _Animator.SetTrigger("Attacked");
         return true;
     }
@@ -234,13 +234,7 @@ public class MeleeEnemy : MonoBehaviour
     {
         if(_State == AiState.Aggressive) { return; }
         ChangeAiState(AiState.Idle);
-        float _Timer = _WaitTime;
-        while(_Timer >= 0)
-        {
-            _Timer -= Time.deltaTime;
-            if (_State == AiState.Aggressive) { return; }
-        }
-        SwitchToBaseState();
+        StartCoroutine(Wait(_WaitTime));
     }
 
     public void Heal(float _Health) //Heals the Ai a set ammount, will not heal above max health
@@ -380,6 +374,12 @@ public class MeleeEnemy : MonoBehaviour
         _Animator = (_Animator == null) ? gameObject.GetComponent<Animator>() : _Animator;
         _RigidBody = (_RigidBody == null) ? gameObject.GetComponent<Rigidbody2D>() : _RigidBody;
         _Target = (_Target == null) ? GameObject.FindGameObjectWithTag("Player") : _Target;
+    }
+
+    IEnumerator Wait(float _Time)
+    {
+        yield return new WaitForSeconds(_Time);
+        SwitchToBaseState();
     }
 }
 
