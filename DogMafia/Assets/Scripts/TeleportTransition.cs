@@ -31,7 +31,7 @@ public class TeleportTransition : MonoBehaviour
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             FadeOut();
-            Invoke("GoToDestination", 1);
+            Invoke("GoToDestination",0.5f);
             Invoke("FadeIn", fadeWait);
             //SceneManager.LoadScene(SceneToLoad);
         }
