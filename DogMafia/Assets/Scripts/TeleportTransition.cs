@@ -2,17 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TeleportTransition : MonoBehaviour
 {
     public GameObject Fader;
     public Vector2 teleportToPosition;
     private Animator anim;
-    
-//    public VectorValue playerStorage;
-//    public GameObject fadeInPanel;
-//    public GameObject fadeOutPanel;
     public float fadeWait;
     
 
@@ -53,17 +48,4 @@ public class TeleportTransition : MonoBehaviour
         anim.SetBool("FadeO", false);
         anim.SetBool("FadeI", true);
     }
-    
-
-//    public IEnumerator FadeCo()
-//    {
-//        if(fadeOutPanel != null) 
-//            Instantiate(fadeOutPanel, Vector3.zero, Quaternion.identity);
-//        yield return new WaitForSeconds(fadeWait);
-//        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(SceneToLoad);
-//        while (!asyncOperation.isDone)
-//        {
-//            yield return null;
-//        }
-//    }
 }

@@ -169,6 +169,168 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29080a0a586e94fd4b8216483b42ee02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &78939131
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7346882317812535477, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_Name
+      value: Scene Transition
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346882317812535477, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346882317812535477, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.606
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0006905908
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443392810655102252, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.079
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248359066176540380, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1928837
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248359066176540380, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.32438797
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248359066176540380, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.14936805
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248359066176540380, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.54141974
+      objectReference: {fileID: 0}
+    - target: {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: a436d9abbe30e42bea4bbb1b5d251478,
+        type: 2}
+    - target: {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 7655258507016794783, guid: bec4a0f692ce94fa5a8ecda8671e6ba9,
+        type: 3}
+    - target: {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 1769523041005051232, guid: acaf96b6fe83c4cbd99c4c4e70a15dee,
+        type: 3}
+    - target: {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: DM_Overworld_RankC
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7600006844786336683, guid: 45e439f8bacca475ba72bb0d112a09f5, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 45e439f8bacca475ba72bb0d112a09f5, type: 3}
+--- !u!1 &78939132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7346882317812535477, guid: 45e439f8bacca475ba72bb0d112a09f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 78939131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &78939133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78939132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df2068e43b5a49edb788d47db4276b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneToLoad: Mafia_Base2
+  fadeInPanel: {fileID: 7655258507016794783, guid: bec4a0f692ce94fa5a8ecda8671e6ba9,
+    type: 3}
+  fadeOutPanel: {fileID: 1769523041005051232, guid: acaf96b6fe83c4cbd99c4c4e70a15dee,
+    type: 3}
+  fadeWait: 0.33
 --- !u!1001 &293888010
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,7 +6,8 @@ TagManager:
   tags:
   - Enemy
   - HitBox
-  - Overworld Mafia Base Door
+  - FadeToBlack
+  - FadeFromBlack
   layers:
   - Default
   - TransparentFX

@@ -41,6 +41,13 @@ public class DialogueManager : MonoBehaviour
 
     private bool buffer;
     
+    private bool reachedEndOfDialogue;
+
+    public bool getEndOfDialogue()
+    {
+        return reachedEndOfDialogue;
+    }
+    
     private void Start()
     {
         characterInfo = new Queue<DialogueBase.characterInfo>();
@@ -113,6 +120,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         OptionsBranch();
+        reachedEndOfDialogue = true;
     }
 
     private void CompleteText()

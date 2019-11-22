@@ -84,7 +84,7 @@ Animator:
   m_GameObject: {fileID: 6950955661356460664}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 36ace190ecee54bbaa3cdc828828820c, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 5292758247615924127}
   m_Layer: 5
   m_Name: FadeFromBlack
-  m_TagString: Untagged
+  m_TagString: FadeFromBlack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
