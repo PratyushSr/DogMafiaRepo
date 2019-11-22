@@ -7,7 +7,7 @@ public class Will_Movement : MonoBehaviour
     public Rigidbody2D rbody;
     public float speed;
     public Animator anim;
-    public VectorValue startingPosition;
+//    public VectorValue startingPosition;
     [SerializeField]
 //    private Stat health; //originally private but made public static to access it in health consumable.cs
 //    private float initialHealth = 100;
@@ -19,13 +19,13 @@ public class Will_Movement : MonoBehaviour
     
 //    //debugging
 //    private Transform target;
-    void Start()
-    {
-        transform.position = startingPosition.initialValue;
+ //   void Start()
+ //   {
+ //       transform.position = startingPosition.initialValue;
 //        health.Initialize(initialHealth,initialHealth);
 
 //        target = GameObject.Find("Target").transform;
-    }
+ //   }
     
     public bool stopMovement()
     {

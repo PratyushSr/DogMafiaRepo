@@ -19,10 +19,13 @@ public class TeleportTransition : MonoBehaviour
 //            GameObject panel = Instantiate(fadeInPanel, Vector3.zero,Quaternion.identity) as GameObject;
 //            Destroy(panel,1);
         }
+
+        Fader.SetActive(false);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        Fader.SetActive(true);
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             FadeOut();
@@ -30,6 +33,7 @@ public class TeleportTransition : MonoBehaviour
             Invoke("FadeIn", fadeWait);
             //SceneManager.LoadScene(SceneToLoad);
         }
+
     }
 
     public void GoToDestination()
