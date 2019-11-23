@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Mafia_Base2.unity
+- path: Assets/Intro.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

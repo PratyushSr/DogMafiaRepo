@@ -30,17 +30,25 @@ public class DialogueTrigger : Interactable
         
         if (sceneName == "Intro")
         {
-            DialogueManager.instance.enqueueDialogue(DB[0]);
-            
+            StartCoroutine(delayDialogue());
+//            DialogueManager.instance.enqueueDialogue(DB[0]);
         }
-        //this checks the scene for the mafia_base2
+//        this checks the scene for the mafia_base2
         else if (sceneName == "Mafia_Base2")
         {
+            StartCoroutine(delayDialogue());
             Debug.Log("entered mafia base dialogue");
-            DialogueManager.instance.enqueueDialogue(DB[0]);
+//            DialogueManager.instance.enqueueDialogue(DB[0]);
         }
         
     }
+
+    IEnumerator delayDialogue()
+    {
+        yield return new WaitForSeconds(1);
+        DialogueManager.instance.enqueueDialogue(DB[0]);
+    }
+    
     public override void Interact()
     {
         Debug.Log("Interacted!");
@@ -55,25 +63,28 @@ public class DialogueTrigger : Interactable
 
     }
 
-    public void FixedUpdate()
-    {
-        if (sceneName == "Intro")
-        {
-            if (DialogueManager.instance.getEndOfDialogue())
-            {
-//                FadeInOut.instance.startFade("Mafia_Base2");
-
-                SceneManager.LoadScene("Mafia_Base2");
-            }
-        }
-        else if (sceneName == "Mafia_Base2")
-        {
-            if (DialogueManager.instance.getEndOfDialogue())
-            {
-//                FadeInOut.instance.startFade("MainOverworld");
-
-                SceneManager.LoadScene("DM_Overworld_RankC");
-            }
-        }
-    }
+//    public void Update()
+//    {
+//        if (sceneName == "Intro")
+//        {
+//            if (DialogueManager.instance.getEndOfDialogue())
+//            {
+//                Debug.Log("inside update dialoguetrigger Intro");
+//                StartCoroutine(GameObject.FindObjectOfType<FadeInOut>()
+//                    .FadeAndLoadScene(FadeInOut.FadeDirection.Out));
+////                FadeInOut.instance.startFade("Mafia_Base2");
+////                SceneManager.LoadScene("Mafia_Base2");
+//            }
+//        }
+////        else if (sceneName == "Mafia_Base2")
+////        {
+////            if (DialogueManager.instance.getEndOfDialogue())
+////            {
+//////                FadeInOut.instance.startFade("MainOverworld");
+////                Debug.Log("inside update dialoguetrigger Mafia_Base2");
+////                SceneManager.LoadScene("DM_Overworld_RankC");
+////            }
+////        }
+//    }
+    
 }

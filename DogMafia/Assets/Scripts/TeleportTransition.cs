@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TeleportTransition : MonoBehaviour
 {
@@ -9,20 +10,54 @@ public class TeleportTransition : MonoBehaviour
     public Vector2 teleportToPosition;
     private Animator anim;
     public float fadeWait;
+    private string sceneName;
     
-
     private void Awake()
     {
         if (Fader != null)
         {
             anim = Fader.GetComponent<Animator>();
-//            GameObject panel = Instantiate(fadeInPanel, Vector3.zero,Quaternion.identity) as GameObject;
-//            Destroy(panel,1);
+            Fader.SetActive(true);
+        }
+    }
+
+    public void Update()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+
+        if (DialogueManager.instance.inDialogue)
+        {
+            Fader.SetActive(false);
+        }
+        if (DialogueManager.instance.getEndOfDialogue() && (sceneName ==  "Intro" || sceneName == "Mafia_Base2"))
+        {
+            Fader.SetActive(true);
+
+            StartCoroutine(delayLoadScene());
+        }
+    }
+    
+    IEnumerator delayLoadScene()
+    {
+        yield return new WaitForSeconds(0);
+        
+
+        if (sceneName == "Intro")
+        {
+            SceneManager.LoadScene("Mafia_Base2");
+
+        }
+        else if (sceneName == "Mafia_Base2")
+        {
+            Debug.Log("inside delayloadscene and mafia base 2");
+            SceneManager.LoadScene("DM_Overworld_RankC");
         }
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+//        Fader.SetActive(true);
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             FadeOut();
