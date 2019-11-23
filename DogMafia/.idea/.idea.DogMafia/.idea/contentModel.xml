@@ -136,6 +136,7 @@
           </e>
         </e>
         <e p="Dialogue" t="Include">
+          <e p="CorgioneTarget1.cs" t="Include" />
           <e p="DialogueBase.cs" t="Include" />
           <e p="DialogueButton.cs" t="Include" />
           <e p="DialogueManager.cs" t="Include" />
@@ -146,6 +147,9 @@
           <e p="MissionBehavior.cs" t="Include" />
           <e p="MissionHandler.cs" t="Include" />
           <e p="TestDialogue.cs" t="Include" />
+          <e p="TinyDialogueSequence.cs" t="Include" />
+          <e p="TinyTarget1.cs" t="Include" />
+          <e p="TinyTarget2.cs" t="Include" />
         </e>
         <e p="Inventory" t="Include">
           <e p="BagScript.cs" t="Include" />
