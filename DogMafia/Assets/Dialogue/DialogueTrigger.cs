@@ -61,29 +61,15 @@ public class DialogueTrigger : Interactable
         DialogueManager.instance.enqueueDialogue(DB[index]);
 
     }
-
-//    public void Update()
-//    {
-//        if (sceneName == "Intro")
-//        {
-//            if (DialogueManager.instance.getEndOfDialogue())
-//            {
-//                Debug.Log("inside update dialoguetrigger Intro");
-//                StartCoroutine(GameObject.FindObjectOfType<FadeInOut>()
-//                    .FadeAndLoadScene(FadeInOut.FadeDirection.Out));
-////                FadeInOut.instance.startFade("Mafia_Base2");
-////                SceneManager.LoadScene("Mafia_Base2");
-//            }
-//        }
-////        else if (sceneName == "Mafia_Base2")
-////        {
-////            if (DialogueManager.instance.getEndOfDialogue())
-////            {
-//////                FadeInOut.instance.startFade("MainOverworld");
-////                Debug.Log("inside update dialoguetrigger Mafia_Base2");
-////                SceneManager.LoadScene("DM_Overworld_RankC");
-////            }
-////        }
-//    }
     
+    //this is used to change the index of the dialogue
+    //first attach the generic interact to the object it should interact with to trigger index change
+    //Create a new event
+    //Drag the NPC that dialogue should change in inspector
+    //Change No Function to DialogueTrigger > SetIndex
+    public void SetIndex(int i)
+    {
+        index = i;
+    }
+
 }

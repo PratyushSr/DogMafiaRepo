@@ -143,7 +143,9 @@
           <e p="DialogueOptions.cs" t="Include" />
           <e p="DialogueTarget.cs" t="Include" />
           <e p="DialogueTrigger.cs" t="Include" />
+          <e p="GenericInteract.cs" t="Include" />
           <e p="Interactable.cs" t="Include" />
+          <e p="Little_GirlQuest.cs" t="Include" />
           <e p="MissionBehavior.cs" t="Include" />
           <e p="MissionHandler.cs" t="Include" />
           <e p="TestDialogue.cs" t="Include" />
