@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7575562144963998961}
   - component: {fileID: 2368178089124025633}
-  - component: {fileID: 1623384449469377143}
   - component: {fileID: 7923793361904148607}
+  - component: {fileID: 5328622295322071216}
   m_Layer: 0
   m_Name: StunProjectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,25 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Type: 1
-  _ProjectileSpeed: 15
-  _Damage: 20
-  _StunDuration: 3
---- !u!58 &1623384449469377143
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3282975799322975820}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.012874961, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.17812121
 --- !u!212 &7923793361904148607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -115,3 +96,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &5328622295322071216
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282975799322975820}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20703125, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0.5}
+    oldSize: {x: 0.4140625, y: 0.1875}
+    newSize: {x: 0.4140625, y: 0.1875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4140625, y: 0.1875}
+  m_EdgeRadius: 0

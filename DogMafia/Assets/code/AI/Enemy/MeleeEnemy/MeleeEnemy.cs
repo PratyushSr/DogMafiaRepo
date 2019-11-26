@@ -43,6 +43,9 @@ public class MeleeEnemy : MonoBehaviour
     private GameObject _Target;
     private float _StunCounter = 0;
 
+    //movement
+    private float _MoveDirection = 0f;
+
     /*
      * Animator values
      * trigger "Attacked" - When the AI Attacks
@@ -54,9 +57,7 @@ public class MeleeEnemy : MonoBehaviour
      * trigger "Damaged" - when the AI is damaged 
      * bool "IsImmune" - Is immune to damage
      * bool "IsStunned" - If the AI is stunned
-     * float "X Velocity" - Velocity on the x axis
-     * float "Y Velocity" - Velocity on the y axis
-     * float "Speed" - The current speed of the AI
+     * float "MoveDirection" - Direction of Movement (-1 for left, 1 for right, 0 for not moving)
      */
 
 
@@ -76,9 +77,11 @@ public class MeleeEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _Animator.SetFloat("X Velocity", _RigidBody.velocity.x);
-        _Animator.SetFloat("Y Velocity", _RigidBody.velocity.y);
-        _Animator.SetFloat("Speed", _RigidBody.velocity.SqrMagnitude());
+        if (_RigidBody.velocity.sqrMagnitude > 0)
+        {
+            _RigidBody.velocity = new Vector3(0, 0, 0);
+        }
+        _Animator.SetFloat("MoveDirection", _MoveDirection);
         if (_StunCounter <= 0)
         {
             _Animator.SetBool("IsStunned", false);
@@ -87,6 +90,7 @@ public class MeleeEnemy : MonoBehaviour
                 case AiState.Idle:
                     {
                         if (CheckAggro()) { break; }
+                        _MoveDirection = 0;
                         break;
                     }
                 case AiState.Patroling:
@@ -97,6 +101,7 @@ public class MeleeEnemy : MonoBehaviour
                             case PatrolType.InOderPatrol:
                                 {
                                     transform.position = Vector2.MoveTowards(transform.position, _MoveSpots[_CurrentSpot].position, _MoveSpeed * Time.deltaTime);
+                                    _MoveDirection = (transform.position.x < _MoveSpots[_CurrentSpot].position.x) ? 1 : -1;
                                     if (Vector2.Distance(transform.position, _MoveSpots[_CurrentSpot].position) < .2f)
                                     {
                                         _CurrentSpot = (_CurrentSpot >= _MoveSpots.Length - 1 ? 0 : _CurrentSpot + 1);
@@ -107,6 +112,7 @@ public class MeleeEnemy : MonoBehaviour
                             case PatrolType.RandomPatrol:
                                 {
                                     transform.position = Vector2.MoveTowards(transform.position, _MoveSpots[_CurrentSpot].position, _MoveSpeed * Time.deltaTime);
+                                    _MoveDirection = (transform.position.x < _MoveSpots[_CurrentSpot].position.x) ? 1 : -1;
                                     if(Vector2.Distance(transform.position, _MoveSpots[_CurrentSpot].position) < .2f)
                                     {
                                         _CurrentSpot = Random.Range(0, _NumOfSpots);
@@ -121,6 +127,7 @@ public class MeleeEnemy : MonoBehaviour
                     {
                         if (CheckAggro()) { break; }
                         transform.position = Vector2.MoveTowards(transform.position, _RandomWanderSpot, _MoveSpeed * Time.deltaTime);
+                        _MoveDirection = (transform.position.x < _RandomWanderSpot.x) ? 1 : -1;
                         if(Vector2.Distance(transform.position, _RandomWanderSpot) < .2f)
                         {
                             _RandomWanderSpot = new Vector2(Random.Range(-_WanderRange.x, _WanderRange.x) + _InitalLocation.x, Random.Range(-_WanderRange.y, _InitalLocation.y) + _InitalLocation.y);
@@ -132,6 +139,7 @@ public class MeleeEnemy : MonoBehaviour
                     {
                         if (CheckIfTargetLost()) { break; }
                         transform.position = Vector2.MoveTowards(transform.position, _Target.transform.position, _MoveSpeed * Time.deltaTime);
+                        _MoveDirection = (transform.position.x < _Target.transform.position.x) ? 1 : -1;
                         if (Vector2.Distance(transform.position, _Target.transform.position) < _AttackRange)
                         {
                             if(_AttackCounter <= 0)

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
-    private float _MoveSpeed = 3f;
+    private float _MoveSpeed = 5f;
     private Vector2 _Movement;
 
     public float _CurrentHealth = 100f;
@@ -14,21 +14,27 @@ public class PlayerScript : MonoBehaviour
     public Animator _Animator;
     public Rigidbody2D _RigidBody;
     public Weapon _Weapon;
-
+    
     private float _InvincibilityDuration = 0.25f; //immune duration
     private bool _IsImmune = false;
     private bool _IsInputDisabled = false;
 
+    public float _AmmoCount = 4.5f;
+    [HideInInspector]
+    public  float _MaxAmmoCount;
+    public float _AmmoPerShot = 1.5f;
+
  /*
  * Animator values
- * float "Horizontal" - Horizontal movement speed
- * float "Vertical" - Vertical movement speed
+ * float "input_x" - Horizontal movement speed
+ * float "input_y" - Vertical movement speed
+ * float "AimingAngle" - The angle of of where the player is aiming
  * float "Speed" - Speed magnitude 
  * trigger "Healed" - When the AI is healed
  * trigger "Damaged" - when the AI is damaged 
  * bool "IsImmune" - Is immune to damage
  * bool "IsStunned" - If the AI is stunned
- * trigger "PrimaryFired - When the primary weapon is fired
+ * trigger "FiredPrimary" - When the primary weapon is fired
  * trigger "MeleeAttack" - When the player does a melee attack
  */
 
@@ -36,10 +42,15 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         ComponentDoubleCheck();
+        _MaxAmmoCount = _AmmoCount;
     }
 
     void Update()
     {
+        if(_AmmoCount < _MaxAmmoCount)
+        {
+            _AmmoCount += Time.deltaTime;
+        }
         _IsInputDisabled = DialogueManager.instance.inDialogue;
         if(!_IsInputDisabled)
         {
@@ -47,7 +58,11 @@ public class PlayerScript : MonoBehaviour
             _Movement.y = Input.GetAxisRaw("Vertical");
             if(Input.GetButtonDown("Fire1"))
             {
-                _Weapon.PrimaryFire();
+                if(_AmmoCount >= _AmmoPerShot)
+                {
+                    _Weapon.PrimaryFire();
+                    _AmmoCount -= _AmmoPerShot;
+                }
             }
             if(Input.GetButtonDown("Fire2"))
             {
@@ -56,11 +71,11 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            _Movement.x = 0;
-            _Movement.y = 0;
+            _Movement.x = 0f;
+            _Movement.y = 0f;
         }
-        _Animator.SetFloat("input_x", _Movement.x);
-        _Animator.SetFloat("input_y", _Movement.y);
+        _Animator.SetFloat("Horizontal", _Movement.x);
+        _Animator.SetFloat("Vertical", _Movement.y);
         //_Animator.SetFloat("Speed", _Movement.sqrMagnitude);
         if(_Movement.sqrMagnitude != 0)
         {
@@ -90,7 +105,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void ApplyDamage1(float _Damage) //Applies damage to character
+    public void ApplyDamage(float _Damage) //Applies damage to character
     {
         if(_Damage > 0 && !_IsImmune) 
         {
@@ -104,7 +119,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void ApplyDamage1(float _Damage, bool _BypassImmune) //if _BypassImmune is true, will apply damage to character even if they are immune
+    public void ApplyDamage(float _Damage, bool _BypassImmune) //if _BypassImmune is true, will apply damage to character even if they are immune
     {
         if(_BypassImmune)
         {
@@ -120,7 +135,7 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            ApplyDamage1(_Damage);
+            ApplyDamage(_Damage);
         }
     }
 

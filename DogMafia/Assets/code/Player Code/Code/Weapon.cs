@@ -5,10 +5,11 @@ using System.Linq;
 
 public class Weapon : MonoBehaviour
 {
+
     public CurrentPrimary _CurrentPrimary;
     public CurrentSpecial _CurrentSpecial;
     public CurrentMelee _CurrentMelee;
-    public DebugMode _DebugMode;
+    //public DebugMode _DebugMode;
 
     private Animator _Animator;
 
@@ -20,6 +21,13 @@ public class Weapon : MonoBehaviour
     public GameObject _DamageProjectile;
 
     private Vector3 _FirePoint;
+
+    /**********************************Weapon Levels *******************************/
+    public WeaponLevel _StunRayLvl = WeaponLevel.Lv1;
+    public WeaponLevel _DamageRayLvl = WeaponLevel.Lv1;
+    public WeaponLevel _StunProjectileLvl = WeaponLevel.Lv1;
+    public WeaponLevel _DamageProjectileLvl = WeaponLevel.Lv1;
+    public WeaponLevel _MeleeLvl = WeaponLevel.Lv1;
 
     //See PlayerScript.cs for animator---------------------------------------------------------------------------------------------------
 
@@ -35,7 +43,7 @@ public class Weapon : MonoBehaviour
         _MousePos.x -= _CenterPointOfPlayer.transform.position.x;
         _MousePos.y -= _CenterPointOfPlayer.transform.position.y;
         _Animator.SetFloat("AimingAngle", GetAngle());
-
+        /*
         switch (_DebugMode)
         {
             case DebugMode.Origin:
@@ -70,8 +78,9 @@ public class Weapon : MonoBehaviour
             case DebugMode.Off:
                 break;
         }
+        */
     }
-
+    
     private float GetAngle2() //gets the angle that the character is aiming
     {
         if (_MousePos.y > _CenterPointOfPlayer.transform.position.y)
@@ -161,31 +170,86 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    /************************************************************** Primary Ray Attacks *****************************************************************/
     private void ShootStunGunRay()
     {
-        float _StunDuration = 4;
-        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, Mathf.Infinity, ~gameObject.layer);
-        if (_Hit)
+        float _StunDuration;
+        switch (_StunRayLvl)
         {
-            _Hit.transform.BroadcastMessage("ApplyStun", _StunDuration);
+            case WeaponLevel.Lv1:
+                {
+                    _StunDuration = 3f;
+                    break;
+                }
+            case WeaponLevel.Lv2:
+                {
+                    _StunDuration = 4f;
+                    break;
+                }
+            case WeaponLevel.Lv3:
+                {
+                    _StunDuration = 5f;
+                    break;
+                }
+            default:
+                {
+                    goto case WeaponLevel.Lv1;
+                }
+        }
+        RaycastHit2D[] _Results = new RaycastHit2D[2];
+        Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, new ContactFilter2D(), _Results, Mathf.Infinity);
+        if(!_Results[0].transform.CompareTag("Player"))
+        {
+            _Results[0].transform.BroadcastMessage("ApplyStun", _StunDuration);
+        }
+        else if (_Results[1])
+        {
+            _Results[1].transform.BroadcastMessage("ApplyStun", _StunDuration);
         }
     }
 
     private void ShootDamageRay()
     {
-        float _Damage = 20;
-        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, Mathf.Infinity, ~gameObject.layer);
-        if (_Hit)
+        float _Damage;
+        switch (_StunRayLvl)
         {
-            _Hit.transform.BroadcastMessage("ApplyDamage", _Damage);
+            case WeaponLevel.Lv1:
+                {
+                    _Damage = 20f;
+                    break;
+                }
+            case WeaponLevel.Lv2:
+                {
+                    _Damage = 35f;
+                    break;
+                }
+            case WeaponLevel.Lv3:
+                {
+                    _Damage = 50f;
+                    break;
+                }
+            default:
+                {
+                    goto case WeaponLevel.Lv1;
+                }
+        }
+        RaycastHit2D[] _Results = new RaycastHit2D[2];
+        Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, new ContactFilter2D(), _Results, Mathf.Infinity);
+        if (!_Results[0].transform.CompareTag("Player"))
+        {
+            _Results[0].transform.BroadcastMessage("ApplyDamage", _Damage);
+        }
+        else if (_Results[1])
+        {
+            _Results[1].transform.BroadcastMessage("ApplyDamage", _Damage);
         }
     }
-
+    /************************************************************** Primary Projectile Attacks **********************************************************/
     private void ShootStunProjectile()
     {
         if (_StunProjectile != null)
         {
-            Instantiate(_StunProjectile, _CenterPointOfPlayer.transform.position, Quaternion.Euler(0, 0, GetAngle()));
+            Instantiate(_StunProjectile, _CenterPointOfPlayer.transform.position, Quaternion.Euler(0, 0, GetAngle()), transform);
         }
     }
 
@@ -193,20 +257,51 @@ public class Weapon : MonoBehaviour
     {
         if(_DamageProjectile != null)
         {
-            Instantiate(_DamageProjectile, _CenterPointOfPlayer.transform.position, Quaternion.Euler(0, 0, GetAngle()));
+            Instantiate(_DamageProjectile, _CenterPointOfPlayer.transform.position, Quaternion.Euler(0, 0, GetAngle()), transform);
         }
     }
-
+    /************************************************************** Melee Attack ************************************************************************/
     private void PreformDamageMelee()
     {
-        float _Damage = 50;
-        float _MeleeRange = 1.0f;
-        RaycastHit2D _Hit = Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, _MeleeRange, ~gameObject.layer);
-        if (_Hit)
+        float _Damage;
+        float _MeleeRange;
+        switch (_MeleeLvl)
         {
-            _Hit.transform.BroadcastMessage("ApplyDamage", _Damage);
+            case WeaponLevel.Lv1:
+                {
+                    _Damage = 40f;
+                    _MeleeRange = 1.0f;
+                    break;
+                }
+            case WeaponLevel.Lv2:
+                {
+                    _Damage = 55f;
+                    _MeleeRange = 1.15f;
+                    break;
+                }
+            case WeaponLevel.Lv3:
+                {
+                    _Damage = 70f;
+                    _MeleeRange = 1.3f;
+                    break;
+                }
+            default:
+                {
+                    goto case WeaponLevel.Lv1;
+                }
+        }
+        RaycastHit2D[] _Results = new RaycastHit2D[2];
+        Physics2D.Raycast(_CenterPointOfPlayer.transform.position, _MousePos, new ContactFilter2D(), _Results, _MeleeRange);
+        if (!_Results[0].transform.CompareTag("Player"))
+        {
+            _Results[0].transform.BroadcastMessage("ApplyDamage", _Damage);
+        }
+        else if (_Results[1])
+        {
+            _Results[1].transform.BroadcastMessage("ApplyDamage", _Damage);
         }
     }
+    /************************************************************** Special *****************************************************************************/
 }
 
 public enum CurrentPrimary
@@ -228,11 +323,19 @@ public enum CurrentMelee
     Unarmed,
     Damage
 }
-
-
+/*
 public enum DebugMode
 {
     Origin,
     Ranged,
     Off
 }
+*/
+public enum WeaponLevel
+{
+    Lv1,
+    Lv2,
+    Lv3
+}
+
+

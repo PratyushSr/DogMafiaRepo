@@ -45,6 +45,10 @@ public class CitizenAi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_RigidBody.velocity.sqrMagnitude > 0)
+        {
+            _RigidBody.velocity = new Vector3(0, 0, 0);
+        }
         _Animator.SetFloat("MoveDirection", _MoveDirection);
         switch (_MoveType)
         {

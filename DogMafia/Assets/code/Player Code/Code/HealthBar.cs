@@ -50,7 +50,6 @@ public class HealthBar : MonoBehaviour
             }
             //healthSegments[i].GetComponent<Image>().color = new Color(defaultColor.r, defaultColor.g, defaultColor.b, PercentFull(i));
             _HealthSegments[i].GetComponent<Image>().DOFade(PercentFull(i), .5f);
-
         }
     }
     float PercentFull(int index)

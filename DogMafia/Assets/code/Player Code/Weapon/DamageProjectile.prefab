@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6286357912365550305}
   m_Layer: 0
   m_Name: DamageProjectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,9 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Type: 0
-  _ProjectileSpeed: 10
-  _Damage: 20
-  _StunDuration: 3
 --- !u!58 &823677967051504144
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62,9 +59,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12950385, y: 0}
+  m_Offset: {x: 0.123577714, y: 0}
   serializedVersion: 2
-  m_Radius: 0.12520158
+  m_Radius: 0.14221251
 --- !u!212 &6286357912365550305
 SpriteRenderer:
   m_ObjectHideFlags: 0
