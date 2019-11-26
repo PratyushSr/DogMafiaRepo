@@ -61,8 +61,8 @@ public class Will_Movement : MonoBehaviour
         if (movement != Vector2.zero)
         {
             anim.SetBool("isWalking", true);
-            anim.SetFloat("input_x", movement.x);
-            anim.SetFloat("input_y", movement.y);
+            anim.SetFloat("Horizontal", movement.x);
+            anim.SetFloat("Vertical", movement.y);
             
             StopAttack();
         }

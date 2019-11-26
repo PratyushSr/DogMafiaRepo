@@ -67,11 +67,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationBlendTree.Node
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -207,11 +204,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 22940}
+      Script: {instanceID: 22944}
     - Class: 114
-      Script: {instanceID: 22996}
+      Script: {instanceID: 23002}
     - Class: 114
-      Script: {instanceID: 23548}
+      Script: {instanceID: 23590}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -306,7 +303,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11878}
     - Class: 114
-      Script: {instanceID: 22996}
+      Script: {instanceID: 23002}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -421,9 +418,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 22940}
+      Script: {instanceID: 22944}
     - Class: 114
-      Script: {instanceID: 22996}
+      Script: {instanceID: 23002}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1642,4 +1639,4 @@ ScriptsOnlyBuild:
   - Assets/Mafia_Base2.unity
   - Assets/DM_Overworld_RankC.unity
   - Assets/code/CombatScene.unity
-  playerPath: C:/Users/22iro/Desktop/DogMafiaRankA/Square.exe
+  playerPath: C:/Users/22iro/Desktop/Rank A - Dog Mafia/Square.exe
