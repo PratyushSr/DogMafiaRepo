@@ -14,11 +14,11 @@ public class RangedEnemy : MonoBehaviour
     private float _MoveSpeed = 2f;
     private float _CurrentHealth = 100f;
     private float _MaxHealth = 100f;
-    private float _AggroRange = 4f;
-    private float _StoppingDistance = 2.5f;
-    private float _RetreatDistance = 1.5f;
-    private float _AttackFrequency = 2f;
-    private float _AttackRange = 3f;
+    private float _AggroRange = 5f;
+    private float _StoppingDistance = 4f;
+    private float _RetreatDistance = 3f;
+    private float _AttackFrequency = 1f;
+    private float _AttackRange = 5f;
     private float _AttackDamage = 20f;
     private float _AttackCounter = 0; //Counts time between attacks
 
@@ -85,6 +85,7 @@ public class RangedEnemy : MonoBehaviour
             _RigidBody.velocity = new Vector3(0, 0, 0);
         }
         _Animator.SetFloat("MoveDirection", _MoveDirection);
+        if (_MoveDirection != 0) { _Animator.SetBool("Moving", true); }
         if (_StunCounter <= 0)
         {
             _Animator.SetBool("IsStunned", false);
@@ -145,14 +146,17 @@ public class RangedEnemy : MonoBehaviour
                         if (Vector2.Distance(transform.position, _Target.transform.position) > _StoppingDistance) //if enemy is certaon distance away, move closer
                         {
                             transform.position = Vector2.MoveTowards(transform.position, _Target.transform.position, _MoveSpeed * Time.deltaTime);
+                            _Animator.SetBool("Aiming", false);
                         }
                         else if (Vector2.Distance(transform.position, _Target.transform.position) < _StoppingDistance && Vector2.Distance(transform.position, _Target.transform.position) > _RetreatDistance) //stay put
                         {
                             transform.position = this.transform.position;
+                            _Animator.SetBool("Aiming", true);
                         }
                         else if (Vector2.Distance(transform.position, _Target.transform.position) < _RetreatDistance) //if player is within retreat distance, run away
                         {
                             transform.position = Vector2.MoveTowards(transform.position, _Target.transform.position, -_MoveSpeed * Time.deltaTime);
+                            _Animator.SetBool("Aiming", false);
                         }
                         _MoveDirection = (transform.position.x < _Target.transform.position.x) ? 1 : -1;
                         if (Vector2.Distance(transform.position, _Target.transform.position) < _AttackRange)

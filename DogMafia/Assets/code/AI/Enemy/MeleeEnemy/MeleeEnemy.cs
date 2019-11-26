@@ -82,6 +82,7 @@ public class MeleeEnemy : MonoBehaviour
             _RigidBody.velocity = new Vector3(0, 0, 0);
         }
         _Animator.SetFloat("MoveDirection", _MoveDirection);
+        if (_MoveDirection != 0) { _Animator.SetBool("Moving", true); }
         if (_StunCounter <= 0)
         {
             _Animator.SetBool("IsStunned", false);

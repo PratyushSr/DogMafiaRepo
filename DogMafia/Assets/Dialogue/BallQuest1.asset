@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterName: ???
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 5718cbfed18297746a5d4b44c1441c2f, type: 3}
     characterScript: Mister, mister! Good day, my name is Emma. My favorite red ball
       has gone missing and I can't find it anywhere.
   - characterName: Emma
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 5718cbfed18297746a5d4b44c1441c2f, type: 3}
     characterScript: '*sniffle*'
   - characterName: Emma
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 5718cbfed18297746a5d4b44c1441c2f, type: 3}
     characterScript: Please help me.

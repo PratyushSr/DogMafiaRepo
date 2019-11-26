@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Walbark-NPC3
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: Prat
-    characterImage: {fileID: 0}
+  - characterName: Cyrus
+    characterImage: {fileID: 21300000, guid: c0828a0532c2ef44287f7fa2e8b14525, type: 3}
     characterScript: I wonder what the interior would look like? Will it be just like
       a bread store?

@@ -164,7 +164,7 @@ public class Weapon : MonoBehaviour
         {
             case CurrentMelee.Damage:
                 {
-                    PreformDamageMelee();
+                    ShootDamageProjectile();
                     break;
                 }
         }

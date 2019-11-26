@@ -12,6 +12,8 @@ public class AmmoBar : MonoBehaviour
     public Color _DefaultColor;
 
     public GameObject[] _AmmoSegments;
+    public GameObject[] _EmptyAmmoSegments;
+    
     private float _AmmoPerSeg;
     private float _NumOfSeg;
 
@@ -23,9 +25,15 @@ public class AmmoBar : MonoBehaviour
         _NumOfSeg = _AmmoSegments.Length;
         _AmmoPerSeg = _PlayerScript._AmmoPerShot;
 
+        if(_EmptyAmmoSegments.Length != _NumOfSeg)
+        {
+            Debug.LogError("The ammount of Segments in ammo bar dont equal eachother");
+        }
+
         for (int i = 0; i < _NumOfSeg; i++)
         {
             _AmmoSegments[i].GetComponent<Image>().DOColor(_DefaultColor, 0f);
+            _EmptyAmmoSegments[i].GetComponent<Image>().DOColor(_DefaultColor, 0f);
         }
 
     }
@@ -40,6 +48,7 @@ public class AmmoBar : MonoBehaviour
         for (int i = 0; i < _NumOfSeg; i++)
         {
             _AmmoSegments[i].GetComponent<Image>().DOFade(PercentFull(i), .5f);
+            _EmptyAmmoSegments[i].GetComponent<Image>().DOFade(1f - PercentFull(i), .5f);
         }
     }
 

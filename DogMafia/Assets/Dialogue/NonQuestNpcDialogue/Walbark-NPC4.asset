@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Walbark-NPC4
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: Alex
-    characterImage: {fileID: 0}
+  - characterName: Alexander
+    characterImage: {fileID: 21300000, guid: ad7d68ab1e953d24f85b09c738b4f7c8, type: 3}
     characterScript: I hope Wal-bark plummets heavily in sales. If it's as refined
       as many dogs are saying, father and I might have to close our produce shop.

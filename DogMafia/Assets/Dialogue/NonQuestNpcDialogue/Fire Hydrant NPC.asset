@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fire Hydrant NPC
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: Luke
-    characterImage: {fileID: 0}
+  - characterName: Elizabeth
+    characterImage: {fileID: 21300000, guid: 2bd5aa215fd2473489ec380681eeecba, type: 3}
     characterScript: Unwarranted tomfoolery isn't allowed in New Bork City. Be careful
       or you might end up in the pound.

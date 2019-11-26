@@ -51,8 +51,7 @@ public class PlayerScript : MonoBehaviour
         {
             _AmmoCount += Time.deltaTime;
         }
-        _IsInputDisabled = DialogueManager.instance.inDialogue;
-        if(!_IsInputDisabled)
+        if(true)
         {
             _Movement.x = Input.GetAxisRaw("Horizontal");
             _Movement.y = Input.GetAxisRaw("Vertical");

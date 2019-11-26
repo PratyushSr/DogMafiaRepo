@@ -20,11 +20,11 @@ MonoBehaviour:
     characterImage: {fileID: 21300000, guid: 30d9704a7d6171044bdcec656528924f, type: 3}
     characterScript: How do you know my name?!
   - characterName: ???
-    characterImage: {fileID: 21300000, guid: 3b80f550f9f21b7459fc7a35d0efd748, type: 3}
+    characterImage: {fileID: 21300000, guid: 1412a682ae423bb4eaddff7495e1278a, type: 3}
     characterScript: Why wouldn't I know your name? I'm Al Corgione, head of the largest
       mafia syndicate in New Bork City.
   - characterName: Al Corgione
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 3b80f550f9f21b7459fc7a35d0efd748, type: 3}
     characterScript: Lookie here, the new competition is in town to run me outta business
       and hand me ova to the Pawlice, so we need ya skills in stealing to put a stop
       to Wal-bark.

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: On the Road NPC
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: Scooby
-    characterImage: {fileID: 0}
+  - characterName: Julia
+    characterImage: {fileID: 21300000, guid: 2bd5aa215fd2473489ec380681eeecba, type: 3}
     characterScript: All of these new technological innovations are mind boggling!
       What's next? Carriages without horses?

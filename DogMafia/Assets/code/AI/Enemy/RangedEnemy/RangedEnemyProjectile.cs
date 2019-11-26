@@ -5,7 +5,7 @@ using UnityEngine;
 public class RangedEnemyProjectile : MonoBehaviour
 {
     private GameObject _Player;
-    private float _MoveSpeed = 3f;
+    private float _MoveSpeed = 6f;
     private float _Damage = 20;
     public GameObject _SpawnOnDeath;
     public CircleCollider2D _Collider;

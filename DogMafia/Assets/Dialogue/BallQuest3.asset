@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterName: Emma
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 5718cbfed18297746a5d4b44c1441c2f, type: 3}
     characterScript: You found my ball!
   - characterName: Emma
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 5718cbfed18297746a5d4b44c1441c2f, type: 3}
     characterScript: Thank you so much, mister!
