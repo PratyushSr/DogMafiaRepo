@@ -207,11 +207,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 23200}
+      Script: {instanceID: 22940}
     - Class: 114
-      Script: {instanceID: 23248}
+      Script: {instanceID: 22996}
     - Class: 114
-      Script: {instanceID: 23524}
+      Script: {instanceID: 23548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -306,7 +306,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11878}
     - Class: 114
-      Script: {instanceID: 23248}
+      Script: {instanceID: 22996}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -421,9 +421,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11924}
     - Class: 114
-      Script: {instanceID: 23200}
+      Script: {instanceID: 22940}
     - Class: 114
-      Script: {instanceID: 23248}
+      Script: {instanceID: 22996}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1642,4 +1642,4 @@ ScriptsOnlyBuild:
   - Assets/Mafia_Base2.unity
   - Assets/DM_Overworld_RankC.unity
   - Assets/code/CombatScene.unity
-  playerPath: C:/Users/22iro/Desktop/Final4358/Square.exe
+  playerPath: C:/Users/22iro/Desktop/DogMafiaRankA/Square.exe

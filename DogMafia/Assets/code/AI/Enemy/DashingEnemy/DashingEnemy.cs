@@ -10,10 +10,10 @@ public class DashingEnemy : MonoBehaviour
     //Stats
     private float _MoveSpeed = 2f;
     private float _DashSpeed = 7f;
-    private float _CurrentHealth = 500f;
-    private float _MaxHealth = 500f;
+    private float _CurrentHealth = 600f;
+    private float _MaxHealth = 600f;
     private float _AggroRange = 15f;
-    private float _AttackFrequency = 2f;
+    private float _AttackFrequency = 1f;
     [HideInInspector]
     public float _CurrentAttackFrequency;
     private float _AttackRange = 20f;
