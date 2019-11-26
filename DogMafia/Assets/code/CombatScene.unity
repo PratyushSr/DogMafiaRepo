@@ -271,13 +271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 32376941}
@@ -1355,15 +1348,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: -18, y: 7, z: 0}
-    second:
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 27, y: 7, z: 0}
     second:
       m_TileIndex: 0
@@ -2203,21 +2187,21 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 188
+  - m_RefCount: 187
     m_Data: {fileID: 11400000, guid: ceed2d6ffc93267469d2652963f847a1, type: 2}
   - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 8b3e3caf060d4e34e952c88db99edef8, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 84f35444ffaa1b146ac64be26263dee2, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 188
+  - m_RefCount: 187
     m_Data: {fileID: 21300000, guid: f561f2fba95bb274599ea96a31089d84, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 21300000, guid: 7984c3ca01b754c4abb1ba0e4e329b21, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 3c6d00d12a549f74e83abf394b58b24d, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 200
+  - m_RefCount: 199
     m_Data:
       e00: 1
       e01: 0
@@ -2236,7 +2220,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 200
+  - m_RefCount: 199
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12794,6 +12778,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: -18, y: 7, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -17, y: 7, z: 0}
     second:
       m_TileIndex: 0
@@ -21904,7 +21897,7 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 2158
+  - m_RefCount: 2159
     m_Data: {fileID: 11400000, guid: ceed2d6ffc93267469d2652963f847a1, type: 2}
   - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: 8b3e3caf060d4e34e952c88db99edef8, type: 2}
@@ -21913,7 +21906,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 2158
+  - m_RefCount: 2159
     m_Data: {fileID: 21300000, guid: f561f2fba95bb274599ea96a31089d84, type: 3}
   - m_RefCount: 14
     m_Data: {fileID: 21300000, guid: 7984c3ca01b754c4abb1ba0e4e329b21, type: 3}
@@ -21922,7 +21915,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 2172
+  - m_RefCount: 2173
     m_Data:
       e00: 1
       e01: 0
@@ -21941,7 +21934,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2172
+  - m_RefCount: 2173
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -22123,13 +22116,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2.4
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 6.03
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 348865889}
@@ -22300,13 +22286,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2.4
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 6.03
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 504127307}
@@ -22632,13 +22611,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 701700378}
@@ -22809,13 +22781,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2.4
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 6.03
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 734642921}
@@ -23155,13 +23120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 841266439}
@@ -23567,13 +23525,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2.4
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 6.03
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 961382689}
@@ -24012,13 +23963,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2.4
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 6.03
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 1050125604}
@@ -24189,13 +24133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 1076479687}
@@ -24711,13 +24648,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 1456353868}
@@ -25063,13 +24993,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 1659665276}
@@ -25240,13 +25163,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2.4
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 6.03
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 1669852893}
@@ -25447,13 +25363,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 1965313850}
@@ -25989,13 +25898,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _State: 1
   _PatrolType: 1
-  _MoveSpeed: 2
-  _CurrentHealth: 100
-  _MaxHealth: 100
-  _AggroRange: 3
-  _AttackFrequency: 2
-  _AttackRange: 1
-  _AttackDamage: 20
   _WanderRange: {x: 3, y: 3}
   _MoveSpots: []
   _Animator: {fileID: 5711769235713832290}
